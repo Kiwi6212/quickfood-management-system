@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Customer Reviews</title>
+    <link rel="stylesheet" href="css/Reviews.css">
+    <link rel="stylesheet" href="css/DropdownMenu.css">
+
+</head>
+
+<body>
+    <div class="center-main">
+        <div class="dropdown-container">
+            <button class="menu-button" id="menu-button">
+                <span class="trait">☰</span>
+            </button>
+
+            <div class="img">
+                <!-- <img src="./assets/logo.png" alt="Logo"> -->
+            </div>
+
+            <a href="ComptePage.html"> <button class="compte">
+                    <div class="compt"></div>
+                </button>
+            </a>
+            <div class="menu-content" id="menu-content">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ReservationPage.html">Reservations</a></li>
+                    <li><a href="ReviewPage.html">Reviews</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="reviews">
+            <h2>Avis des clients</h2>
+
+            <!-- Affichage des avis existants -->
+            <ul id="reviews-list">
+                <li>Bonne nourriture et service incroyable!</li>
+                <li>Très propre et bien organisé.</li>
+            </ul>
+
+            <!-- Zone de saisie de la nouvelle revue -->
+            <textarea id="new-review" placeholder="Écrivez votre avis"></textarea>
+
+            <!-- Bouton pour soumettre la revue -->
+            <button class="but_review_succes" onclick="handleReviewSubmit()">
+                Soumettre l'avis
+            </button>
+
+            <!-- Message de confirmation après soumission -->
+            <p id="success-message" class="success-message" style="display: none;">
+                Votre avis a été soumis avec succès !
+            </p>
+        </div>
+    </div>
+
+    <script src="js/csrf.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/scriptReviewPage.js"></script>
+
+
+</body>
+
+</html>

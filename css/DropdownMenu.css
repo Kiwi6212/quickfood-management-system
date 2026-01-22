@@ -1,0 +1,109 @@
+/* DropdownMenu.css */
+
+.dropdown-container {
+    position: relative;
+    width: 425px;
+    align-items: flex-start;
+    display: flex;
+    background-color: white;
+    height: 80px;
+  }
+  
+  .trait{
+    font-size: 2.5em;
+    background-color: white;
+    color: black;
+  }
+
+  .img{
+    height: 40px;
+    width: 148px;
+    left: 130px;
+    top: 18px;
+    background-image: url(../assets/Logo.png);
+    position: relative;
+  }
+
+  .menu-button {
+    position: absolute;
+    background-color: white;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-items: flex-start;
+    display: flex;
+    height: 80px;
+  }
+  
+  /* .menu-button:hover {
+     background-color: #0056b3;
+  } */
+  
+  .menu-content {
+    position: absolute;
+    top: 80px;
+    left: -300px; /* Start hidden off-screen */
+    width: 100%;
+    max-width: 425px;
+    background-color: #f9f9f9;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 8px; */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* padding: 20px; */
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.4s ease;
+    z-index: 3;
+
+  }
+  
+  .menu-content.open {
+    left: 0px; /* Moves the div to the right */
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .menu-content h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #007BFF;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .menu-content ul {
+    list-style: none;
+    padding: 0;
+   
+  }
+  
+  .menu-content li {
+    margin-bottom: 10px;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .menu-content a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .menu-content a:hover {
+    color: #007BFF;
+  }
+
+  .compte{
+    background-image: url(../assets/Vector.png);
+    height: 44px;
+    width: 46px;
+    position: relative;
+    left: 200px;
+    top: 13px;
+    background-color: white;
+    border: none;
+  }
+  

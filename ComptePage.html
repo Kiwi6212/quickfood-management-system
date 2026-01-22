@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Page Compte</title>
+    <link rel="stylesheet" href="css/CompteStyle.css">
+</head>
+
+<body>
+    <div class="bg_full">
+        <div class="compte-container">
+            <h1>Bienvenue dans votre espace compte</h1>
+            <div class="auth-buttons">
+                <!-- Boutons pour basculer entre les formulaires -->
+                <button class="active" onclick="showForm('sign-in-form')">Se Connecter</button>
+                <button onclick="showForm('sign-up-form')">S'inscrire</button>
+            </div>
+            <!-- Bouton pour retourner à l'accueil -->
+            <div class="home-button-container">
+                <a href="index.html" class="home-button">
+            </div>
+            <!-- Formulaire de connexion -->
+            <div class="auth-form" id="sign-in-form">
+                <h2>Se connecter</h2>
+                <form id="login-form" action="backend/login.php" method="POST">
+                    <input type="email" name="email" placeholder="Email" required />
+                    <input type="password" name="password" placeholder="Mot de passe" required />
+                    <button type="submit">Connexion</button>
+                </form>
+
+                <button class="back-button" onclick="backToMain()">Retour</button>
+            </div>
+
+            <!-- Formulaire d'inscription -->
+            <div class="auth-form" id="sign-up-form" style="display: none;">
+                <h2>Créer un compte</h2>
+                <form id="signup-form" action="backend/signup.php" method="POST">
+                    <input type="text" name="name" placeholder="Nom complet" required />
+                    <input type="email" name="email" placeholder="Email" required />
+                    <input type="password" name="password" placeholder="Mot de passe" required />
+                    <button type="submit">S'inscrire</button>
+                </form>
+
+                <button class="back-button" onclick="backToMain()">Retour</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/csrf.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/scriptComptePageLogin-form.js"></script>
+    <script src="js/scriptComptePageSignup-form.js"></script>
+    <script src="js/scriptComptePage.js"></script>
+
+</body>
+
+</html>

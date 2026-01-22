@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Réservation</title>
+    <link rel="stylesheet" href="css/ReservationStyles.css">
+    <link rel="stylesheet" href="css/DropdownMenu.css">
+</head>
+
+<body>
+    <div class="center_main">
+        <div class="dropdown-container">
+            <button class="menu-button" id="menu-button">
+                <span class="trait">&#9776;</span>
+            </button>
+
+            <div class="img">
+                <!-- Logo ou autre image -->
+            </div>
+
+            <button class="compte" id="compte-button">
+                <div class="compt"></div>
+            </button>
+
+            <div class="menu-content" id="menu-content">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="ReservationPage.html">Réservations</a></li>
+                    <li><a href="ReviewPage.html">Avis</a></li>
+                    <!-- <?php
+            session_start();
+            // Vérification du rôle de l'utilisateur
+            if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') {
+                echo '<li><a href="ReservationClientPage.php">Réservations Clients</a></li>';
+            }
+            ?> -->
+                </ul>
+            </div>
+        </div>
+        <div class="bg-full_page">
+            <div class="reservation_text">
+                <span>Réservation</span>
+            </div>
+
+            <form id="reservation-form" class="container">
+                <div class="row">
+                    <label for="date">Date :</label>
+                    <div class="input-wrapper">
+                        <input type="date" id="date" class="input" required />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="time">Heure :</label>
+                    <div class="input-wrapper">
+                        <input type="time" id="time" class="input" required />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="table">Table :</label>
+                    <div class="input-wrapper">
+                        <select id="table" class="input" required>
+                            <option value="" disabled selected>Choisissez une table</option>
+                            <option value="1">Table 1</option>
+                            <option value="2">Table 2</option>
+                            <option value="3">Table 3</option>
+                            <option value="4">Table 4</option>
+                            <option value="5">Table 5</option>
+                            <option value="6">Table 6</option>
+                            <option value="7">Table 7</option>
+                            <option value="8">Table 8</option>
+                            <option value="9">Table 9</option>
+                            <option value="10">Table 10</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <label for="menu">Menu :</label>
+                    <div class="input-wrapper">
+                        <select id="menu" class="input" required>
+                            <option value="" disabled selected>Choisissez un menu</option>
+                            <option value="Menu 1">Bœuf Bourguignon revisité</option>
+                            <option value="Menu 2">Tarte Fine au Chèvre et Miel</option>
+                            <option value="Menu 3">Soufflé au Chocolat Noir</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="submit" class="but_reservation_text_succes">Réserver</button>
+            </form>
+
+            <script>
+
+            </script>
+        </div>
+    </div>
+    <script src="js/csrf.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/scriptReservationPage.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #495e57;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Conteneur principal */
+.bg_full {
+    width: 100%;
+    max-width: 425px;
+    padding: 20px;
+}
+
+/* Conteneur du contenu */
+.compte-container {
+    background-color: #ffffff;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 380px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre principal */
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Boutons de navigation */
+.auth-buttons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.auth-buttons button {
+    width: 45%;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: yellow;
+    color: black;
+    transition: transform 0.2s ease;
+}
+
+.auth-buttons button:hover {
+    transform: scale(1.05);
+}
+
+/* Formulaires */
+.auth-form {
+    display: none; /* Cacher les formulaires par défaut */
+    animation: fadeIn 0.3s ease;
+}
+
+.auth-form input {
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    display: block;
+}
+
+.auth-form button {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.auth-form button.back-button {
+    background-color: #007bff;
+    margin-top: 10px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Conteneur du bouton */
+.home-button-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Bouton "Page d'accueil" */
+.home-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.home-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}

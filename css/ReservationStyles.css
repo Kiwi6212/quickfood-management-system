@@ -1,0 +1,129 @@
+/* Style global pour des ajustements responsifs */
+* {
+    max-width: 425px;
+    box-sizing: border-box;
+}
+.center_main{
+    left: 700px;
+    position: relative;
+  }
+.bg-full_page {
+    padding: 20px;
+    background-color: #ffffff;
+    color: black;
+    height: 797px;
+}
+
+.reservation_text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 280px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    min-width: 80px;
+}
+
+.input {
+    width: 280px;
+    height: 45px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 0 15px;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    position: relative;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+/* Icônes spécifiques pour les champs */
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.icon {
+    position: absolute;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    color: black;
+    pointer-events: none;
+}
+
+/* Icône spécifique au champ date */
+#date + .icon svg {
+    content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h18M8 4v4M16 4v4M4 10v10h16V10" /></svg>');
+}
+
+/* Icône spécifique au champ heure */
+#time + .icon svg {
+    content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 6v6l4 2" /></svg>');
+}
+
+/* Icône spécifique au champ table */
+#table + .icon svg {
+    content: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6" /></svg>');
+}
+
+select.input {
+    appearance: none;
+    background: white;
+    padding-right: 40px;
+}
+
+/* Bouton de soumission */
+.but_reservation_text_succes {
+    height: 35px;
+    width: 148px;
+    background-color: yellow;
+    border-radius: 30px;
+    color: black;
+    border: none;
+    font-size: 1.2em;
+    position: relative;
+    top: 40px;
+    left: 120px;
+}
+
+.but_reservation_text_succes:hover {
+    background-color: #e6c200;
+}
+
+.img_reservation {
+    background-image: url(../assets/Rectangle_4.png);
+    height: 283px;
+    width: 378px;
+    background-repeat: no-repeat;
+    top: 100px;
+    position: relative;
+    left: 5px;
+}

@@ -1,0 +1,343 @@
+/* styles.css 
+*{
+    background-color:rgb(255, 255, 255); 
+}
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;                                         
+    /* background-color: #f9f9f9; */
+    /* color: #ff0000; */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    /* box-shadow: 0 0 0 3px red inset; */
+  }
+  
+  h1, h2, h3 {
+    color: #222;
+    margin-bottom: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007BFF;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 20px; */
+  }
+  
+  /* Navbar Styles */
+  nav {
+    background-color: #007BFF;
+    padding: 10px 20px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  nav a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #FFD700;
+  }
+  
+  /* Home Page */
+  .home {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .home h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .home p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .menu-dropdown {
+    text-align: center;
+  }
+  
+  .menu-dropdown select {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  /* Reservation Page */
+  .calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+  }
+  
+  .calendar h2 {
+    font-size: 1.8rem;
+  }
+  
+  .calendar p {
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+  .center_main{
+    left: 700px;
+    position: relative;
+  }
+ 
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .calendar {
+      padding: 20px;
+    }
+  }
+  @media (max-width: 425px){
+    nav{
+        background-color: yellow;
+    }
+    body{
+      max-width: 425px;
+      box-sizing: border-box; 
+      /* background-color: yellow; */
+    }
+    *{
+      
+      max-width: 425px;
+      box-sizing: border-box;
+    }
+  }
+
+  .bg_title{
+    background-color: #495e57 ;
+    height: 347px;
+    width: 100%;
+    max-width: 425px;
+  }
+
+  .title{
+    left: 16px;
+    height: 104px;
+    width: 280px;
+    position: relative;
+  }
+  .title_haut{
+    color: yellow;
+    font-size: 3em;
+  }
+  .title_bas{
+    color: white;
+    font-size: 2em;
+    bottom: 3px;
+    position: absolute;
+  }
+
+  .home_CTA{
+    height: 187px;
+    width: 395px;
+    top: 16px;
+    left: 16px;
+    position: relative;
+    /* background-color: red; */
+    color: white;
+  }
+  .pre{
+    height: 150px;
+    width: 100%;
+    bottom: 35px;
+    /* background-color: rgb(0, 0, 0); */
+  }
+  .pre_text{
+    width: 242px;
+    height: 100%;
+  }
+  .pre_img{
+    background-image: url(./assets/Img_pop.png);
+    height: 100%;
+    width: 147px;
+    background-repeat: no-repeat;
+    left: 250px;
+    position: relative;
+    bottom: 150px;
+  }
+ 
+
+  .but_reservation_text{
+    height:35px;
+    width: 148px;
+    background-color: yellow;
+    border-radius: 30px;
+    color: black;
+    border: none;
+    font-size: 1.2em;
+  }
+
+  .bg_main{
+    height: auto;
+    width: 100%;
+    max-width: 425px;
+    background-color: white;
+    /* top: 30px; */
+    /* position: relative; */
+    /* left: 30px; */
+  }
+
+  .menu_liste{
+    font-size: 2em;
+    color: black;
+    left: 30px;
+    position: relative;
+    font-weight: bold;
+  }
+
+  .liste_menu1{
+    height: 133px;
+    width: 100%;
+    /* left: 16px; */
+    position: relative;
+    /* background-color: rgb(136, 255, 0); */
+    color: black;
+    padding-left: 10px;
+  }
+
+  .titre_menu1{
+    font-size: 1.2em;
+  }
+
+  .desc_menu1{
+    margin-right: 110px;
+  }
+
+  .photo_menu1{
+    height: 83px;
+    width: 83px;
+    /* background-image: url(./assets/Resto1.png); */
+    background-repeat: no-repeat;
+    background-color: blue;
+    position: absolute;
+    left: 330px;
+    bottom: 30px;
+  }
+  
+  .prix_menu1{
+    font-size: 1.2em;
+    bottom: 5px;
+    position: absolute;
+  }
+
+  .liste_menu2{
+    height: 133px;
+    width: 100%;
+    /* left: 16px; */
+    position: relative;
+    /* background-color: red; */
+    color: black;
+    padding-left: 10px;
+  }
+
+  .titre_menu2{
+    font-size: 1.2em;
+  }
+
+  .desc_menu2{
+    margin-right: 110px;
+    /* font-size: 0.9em; */
+   
+  }
+
+  .photo_menu2{
+    height: 83px;
+    width: 83px;
+    /* background-image: url(./assets/Resto1.png); */
+    background-repeat: no-repeat;
+    background-color: blue;
+    position: absolute;
+    left: 330px;
+    bottom: 30px;
+  }
+  
+  .prix_menu2{
+    font-size: 1.2em;
+    bottom: 3px;
+    position: absolute;
+  }
+
+  .liste_menu3{
+    height: 133px;
+    width: 100%;
+    /* left: 16px; */
+    position: relative;
+    /* background-color: rgb(27, 128, 141); */
+    color: black;
+    padding-left: 10px;
+  }
+
+  .titre_menu3{
+    font-size: 1.2em;
+  }
+
+  .desc_menu3{
+    margin-right: 110px;
+  }
+
+  .photo_menu3{
+    height: 83px;
+    width: 83px;
+    /* background-image: url(./assets/Resto1.png); */
+    background-repeat: no-repeat;
+    background-color: blue;
+    position: absolute;
+    left: 330px;
+    bottom: 30px;
+  }
+  
+  .prix_menu3{
+    font-size: 1.2em;
+    bottom: 5px;
+    position: absolute;
+  }
+
+
+
+  
